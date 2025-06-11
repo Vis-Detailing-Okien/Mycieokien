@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lśniące okna w całym Lubuskim. Czyste okna w Zielonej Górze i okolicach. VIS Detailing Okien – profesjonalne mycie okien.">
+  <title>VIS Detailing Okien – Mycie okien Lubuskie</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f2f2;
+      color: #222;
+    }
+    header {
+      background-color: #ffffff;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .header-text {
+      grid-column: 2;
+    }
+    .header-text h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    .header-text p {
+      margin: 5px 0;
+      font-weight: bold;
+    }
+    .header-logo {
+      grid-column: 3;
+      justify-self: end;
+    }
+    .header-logo img {
+      max-height: 100px;
+      width: auto;
+    }
+    .hero {
+      padding: 40px 20px;
+      background: #e3f2fd;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .contact {
+      background: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+    .contact p {
+      margin: 5px 0;
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #ffffff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background-color: #2196f3;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1976d2;
+    }
+    .description {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #ffffff;
+    }
+    .description h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+    .description p {
+      max-width: 800px;
+      margin: 0 auto 20px auto;
+      line-height: 1.6;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    .gallery img {
+      max-width: 400px;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-text">
+      <h1>VIS Detailing Okien</h1>
+      <p>Lśniące okna w całym Lubuskim</p>
+    </div>
+    <div class="header-logo">
+      <img src="IMG_8412.png" alt="Logo VIS" />
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>Czyste okna w Zielonej Górze i okolicach</h2>
+    <p>Profesjonalne mycie okien domów, firm i lokali usługowych</p>
+  </section>
+
+  <section class="contact">
+    <p><strong>Telefon:</strong> 734 464 373</p>
+    <p><strong>E-mail:</strong> <a href="mailto:biuro.detailing.vis@gmail.com">biuro.detailing.vis@gmail.com</a></p>
+  </section>
+
+  <form name="rezerwacja-okien" method="POST" data-netlify="true">
+    <h3>Umów się na mycie okien</h3>
+    <input type="hidden" name="form-name" value="rezerwacja-okien">
+
+    <label for="name">Imię i nazwisko</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="address">Adres (ulica, miejscowość)</label>
+    <input type="text" id="address" name="address" required>
+
+    <label for="date">Wybierz datę</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="time">Wybierz godzinę</label>
+    <input type="time" id="time" name="time" required>
+
+    <label for="message">Dodatkowe informacje (opcjonalnie)</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <button type="submit">Zarezerwuj termin</button>
+  </form>
+
+  <div style="height: 40px;"></div> <!-- odstęp -->
+
+  <form name="wycena" method="POST" data-netlify="true">
+    <h3>Umów się z nami na bezpłatną wycenę Twojego domu lub lokalu</h3>
+    <input type="hidden" name="form-name" value="wycena">
+
+    <label for="name2">Imię i nazwisko</label>
+    <input type="text" id="name2" name="name" required>
+
+    <label for="address2">Adres (ulica, miejscowość)</label>
+    <input type="text" id="address2" name="address" required>
+
+    <label for="message2">Co mamy wycenić?</label>
+    <textarea id="message2" name="message" rows="4"></textarea>
+
+    <button type="submit">Zamów bezpłatną wycenę</button>
+  </form>
+
+  <section class="description">
+    <h3>Dlaczego warto wybrać VIS Detailing Okien?</h3>
+    <p>Jesteśmy zespołem z wieloletnim doświadczeniem w profesjonalnym myciu okien, zarówno w domach, firmach, jak i lokalach usługowych. Z sukcesem realizujemy nawet najtrudniejsze zlecenia, w tym prace na dużych wysokościach. Korzystamy z bezpiecznego i nowoczesnego sprzętu, co pozwala nam gwarantować najwyższą jakość usług przy zachowaniu pełnego bezpieczeństwa.</p>
+    <p>Oferujemy również <strong>mycie okien po remontach i pracach budowlanych</strong>, dzięki czemu Twoje wnętrze będzie gotowe do użytku lub prezentacji w idealnym stanie.</p>
+  </section>
+
+  <section class="gallery">
+    <img src="download5.jpg" alt="Mycie okien na wysokości">
+    <img src="IMG_2157.jpeg" alt="Czyste okno w lokalu gastronomicznym">
+  </section>
+</body>
+</html> to jest mój kod na tym bedziemy pracować
